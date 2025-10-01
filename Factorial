@@ -1,0 +1,21 @@
+//Factorial of a given number
+//Jayraj Chaudhari
+#include<stdio.h>
+int main()
+{
+    long int a,b,factorial;
+    factorial=1;
+    printf("Enter the number you want factorial of:");
+    scanf("%ld",&a);
+    if(a==0)
+    printf("Factorial of 0 is 1.");
+    else
+    {
+    for(b=1;b<=a;b++)
+    {
+        factorial=factorial*b;
+    }
+    printf("Factorial of %ld is %ld",a,factorial);
+}
+    return 0;
+}
