@@ -1,0 +1,10 @@
+// Revolution time of earth in different units
+// Jayraj Chaudhari
+#include <stdio.h>
+int main()
+{
+    int a = 31558150;
+    float b = a / 60.0, c = b / 60.0, d = c / 24.0;
+    printf("The revolution time of earth is as following in different units:\n%d seconds\n%f minuts\n%f hours\n%f days", a, b, c, d);
+    return 0;
+}
