@@ -1,0 +1,15 @@
+/Table of the given no
+//Jayraj Chaudhari
+#include<stdio.h>
+int main()
+{
+    int a,b,c;
+    printf("Enter value of the number:");
+    scanf("%d",&a);
+    printf("Enter places til you want table:");
+    scanf("%d",&b);
+    for(c=1;c<=b;c++)
+    {
+        printf("%d * %d = %d\n",a,c,a*c);
+    }
+}
