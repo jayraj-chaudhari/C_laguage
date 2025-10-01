@@ -1,0 +1,19 @@
+//Swap of two variables using third variable
+//Jayraj Chaudhari
+
+#include<stdio.h>
+int main()
+{
+    int a,b;
+    printf("Entre the value of a:");
+    scanf("%d",&a);
+    printf("Entre the value of b:");
+    scanf("%d",&b);
+
+    int c=a;
+    a=b;
+    b=c;
+
+    printf("After the exchange a=%d and b=%d",a,b);
+    return 0;
+}
