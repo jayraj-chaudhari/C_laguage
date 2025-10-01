@@ -1,0 +1,15 @@
+//Program to calculate area of a triangle
+//Jayraj Chaudhari
+
+#include<stdio.h>
+int main()
+{
+    float base,height;
+    printf("Entre the base of triangle in cm:");
+    scanf("%f",&base);
+    printf("Entre the height of the triangle in cm:");
+    scanf("%f",&height);
+    float area=base*height/2;
+    printf("Area of the triangle is %f cm^2",area);
+    return 0;
+}
