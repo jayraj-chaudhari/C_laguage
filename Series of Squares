@@ -1,0 +1,15 @@
+// Program to print series of squares
+// Jayraj Chaudhari
+#include <stdio.h>
+int main()
+{
+    int n, a, b;
+    printf("Enter the number of terms:");
+    scanf("%d", &n);
+    for (a = 1; a <= n; a++)
+    {
+        b = a * a;
+        printf("%d  ", b);
+    }
+    return 0;
+}
