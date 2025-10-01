@@ -1,0 +1,18 @@
+//Program to calculate gross salary
+//Jayraj Chaudhari
+
+#include<stdio.h>
+int main()
+{
+    float salary,hra,allowance;
+    printf("Entre your basic salary:");
+    scanf("%f",&salary);
+    printf("Entre your hra:");
+    scanf("%f",&hra);
+    printf("Entre other allowances:");
+    scanf("%f",&allowance);
+    float grosssalary=salary+hra+allowance;
+    printf("Your gross salary is %f",grosssalary);
+    return 0;
+
+}
