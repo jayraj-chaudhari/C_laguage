@@ -1,0 +1,10 @@
+//Print ascii code of any charactor
+//Jayraj Chaudhari
+#include<stdio.h>
+int main()
+{
+    char c;
+    printf("Enter the charactor you want ascii code of:");
+    scanf("%c",&c);
+    printf("Ascii code of %c is %d",c,c);
+}
