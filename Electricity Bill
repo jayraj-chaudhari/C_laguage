@@ -1,0 +1,32 @@
+// Electricity bill according to different conditions
+// Jayraj Chaudhari
+#include <stdio.h>
+int main()
+{
+    float units, price;
+    printf("Enter the consumed units by your house");
+    scanf("%f", &units);
+    if (units >= 0 && units <= 200)
+    {
+        price = 0.5 * units;
+        printf("Your electricity bill is %f", price);
+    }
+    else if (units > 200 && units <= 400)
+    {
+        price = (100 + (0.65 * (units - 200)));
+        printf("Your electricity bill is %f", price);
+    }
+    else if (units > 400 && units <= 600)
+    {
+        price = (230 + (0.80 * (units - 400)));
+        printf("Your electricity bill is %f", price);
+    }
+    else if (units > 600)
+    {
+        price = (425 + (125 * (units - 600)));
+    }
+    else
+    {
+        printf("Wrong units are entered");
+    }
+}
