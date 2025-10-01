@@ -1,0 +1,21 @@
+//Program to calculate simple intrest
+//Jayraj Chaudhari
+
+#include<stdio.h>
+int main()
+{
+    float amt,time,intrest_rate;
+
+    printf("Entre the total amount:");
+    scanf("%f",&amt);
+    printf("Entre the time in days:");
+    scanf("%f",&time);
+    printf("Entre the  intrest rate in percentage per days:");
+    scanf("%f",&intrest_rate);
+
+    float intrest=amt*intrest_rate*time/100;
+
+    printf("The intrest is %f",intrest);
+
+    return 0;
+}
