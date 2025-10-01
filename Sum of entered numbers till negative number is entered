@@ -1,0 +1,23 @@
+// Program that read numbers till a nagetive number is given and print sum of previous given numbers
+// Jayraj Chaudhari
+#include <stdio.h>
+#include <stdlib.h>
+int main()
+{
+    int i, sum = 0;
+    do
+    {
+        printf("Enter the number");
+        scanf("%d", &i);
+        if (i < 0)
+        {
+            goto x;
+        }
+        else
+        {
+            sum = sum + i;
+        }
+    } while (0 == 0);
+x:
+    printf("Sum of all positive no entered is %d", sum);
+}
