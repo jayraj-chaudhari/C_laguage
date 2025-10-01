@@ -1,0 +1,29 @@
+// Check if number is even or odd
+// Jayraj Chaudhari
+
+#include <stdio.h>
+int main()
+{
+    int a;
+    printf("Entre the number you want to check wether it is odd or even :");
+    scanf("%d", &a);
+    if (a == 0)
+    {
+        printf("You have entered zero");
+    }
+    else if (a < 0)
+    {
+        printf("Entered number is nagative");
+    }
+
+    else if (a % 2 == 0)
+    {
+        printf("Entered number is even");
+    }
+    else if (a % 2 != 0)
+    {
+
+        printf("Entered number is odd");
+    }
+    return 0;
+}
