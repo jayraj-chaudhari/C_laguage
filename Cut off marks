@@ -1,0 +1,21 @@
+// Program to calculate the cut  off marks of a student
+// Jayraj Chaudhari
+
+#include <stdio.h>
+int main()
+{
+    float a, b, c, d;
+    printf("Entre your marks in mathematics out of 200:");
+    scanf("%f", &a);
+    printf("Entre your marks in Physics out of 200:");
+    scanf("%f", &b);
+    printf("Entre your marks in Chemistry out of 200:");
+    scanf("%f", &c);
+    printf("Entre your marks in entrance examination out of 100:");
+    scanf("%f", &d);
+
+    float e = a / 2 + b / 2 + c / 2 + d;
+    printf("Your cut off marks are %f", e);
+
+    return 0;
+}
