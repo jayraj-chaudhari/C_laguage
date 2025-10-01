@@ -1,0 +1,28 @@
+// Program to calculate power without math.h
+// Jayraj Chaudhari
+#include <stdio.h>
+int main()
+{
+    long int num1, power, i;
+
+    printf("Enter the number and it's power(in order) you want to calculate:");
+    scanf("%ld\n%ld", &num1, &power);
+    long int c = num1;
+    if (power == 0 && num1 == 0)
+    {
+        printf("Not defined");
+    }
+    else if (power == 0 && num1 != 0)
+     {
+           printf("answer is 1");
+     }
+    else
+    {
+        for (i = 1; i < power; i++)
+        {
+            num1 = num1 * c;
+        }
+        printf("Finel result is %ld", num1);
+    }
+    return 0;
+}
