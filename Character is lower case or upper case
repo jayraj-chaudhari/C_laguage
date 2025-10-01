@@ -1,0 +1,16 @@
+//Read charactor and check wether it is a lower case charactor or a upper case 
+//Jayraj chaudhari
+#include<stdio.h>
+int main()
+{
+    char c;
+    printf("Enter a charactor:");
+    scanf("%c",&c);
+    if(c>='a'&&c<='z')
+    printf("You have entered a lower case letter.");
+    else if(c>='A'&&c<='Z')
+    printf("You have entered a upper case letter.");
+    else
+    printf("You have not entered a charactor.");
+    return 0;
+}
