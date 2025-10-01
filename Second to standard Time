@@ -1,0 +1,21 @@
+//Convert seconds in standard time
+//Jayraj Chaudhari
+
+#include<stdio.h>
+int main()
+{
+    int a;
+    int b,c,d,e;
+
+    printf("Entre the total seconds:");
+    scanf("%d",&a);
+
+    b=a/(3600*24);      //days
+    c=(a/3600)%24;      //hours
+    d=(a/60)%60;        //minutes
+    e=(a%60);           //seconds
+
+    printf("Number of seconds are equivalent to %d days, %d hours, %d minutes and %d seconds.  ",b,c,d,e);
+
+    return 0;
+}
