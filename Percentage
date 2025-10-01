@@ -1,0 +1,26 @@
+//Total marks and percentage of five subjects
+//Jayraj Chaudhari
+
+#include<stdio.h>
+int main()
+{
+    int a,b,c,d,e;
+
+    printf("Entre the your marks in maths:");
+    scanf("%d",&a);
+    printf("Entre the your marks in science:");
+    scanf("%d",&b);
+    printf("Entre the your marks in english:");
+    scanf("%d",&c);
+    printf("Entre the your marks in physics:");
+    scanf("%d",&d);
+    printf("Entre the your marks in chemistry:");
+    scanf("%d",&e);
+
+    int t=a+b+c+d+e;
+    printf("Your total marks are %d\n",t);
+
+    float f=(float)(a+b+c+d+e)/5;
+    printf("You got %f percentage",f);
+    return 0;
+}
