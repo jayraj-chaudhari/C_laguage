@@ -1,0 +1,23 @@
+// Program to read three numbers and calculate maximum using logical oprator
+// Jayraj Chaudhari
+#include <stdio.h>
+int main()
+{
+    int a, b, c;
+    printf("Enter three numbers:");
+    scanf("%d%d%d", &a, &b, &c);
+    if (a >= b && a >= c)
+    {
+        printf("%d is biggest",a);
+    }
+    else if (b>=c && b>=a)
+    {
+        printf("%d is biggest",b);
+    }
+    else if (c>=a && c>=b)
+    {
+        printf("%d is biggest",c);
+    }
+
+    return 0;
+}
