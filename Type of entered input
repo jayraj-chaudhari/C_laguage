@@ -1,0 +1,17 @@
+/*Program to check wether entered number is small case,upper case,digit or a special charactor
+Jayraj Chaudhari*/
+#include<stdio.h>
+int main()
+{
+    char c;
+    printf("Enter the charactor,digit or a special charactor:");
+    scanf("%c",&c);
+    if(c>='a'&&c<='z')
+    printf("You have entered a lower case letter");
+    else if(c>='A'&&c<='Z')
+    printf("You have entered a upper case letter");
+    else if(c>='0'&&c<='9')
+    printf("You have entered a digit ");
+    else
+    printf("You have entered a special charactor");
+}
