@@ -1,0 +1,45 @@
+// Program to read time in hour ,minut and second and to convert it into total seconds
+// Jayraj Chaudhari
+#include <stdio.h>
+int main()
+{
+  int a, b, c, d, e, f, g;
+
+  printf("If you want to enter the time into hours then press 1 otherwise 0:");
+  scanf("%d", &a);
+
+  if (a == 1)
+  {
+    printf("Entre the time in hours:");
+    scanf("%d", &b);
+    c = b * 60 * 60;
+    printf("Entered time is %d in seconds", c);
+  }
+  else if (a == 0)
+  {
+    printf("If you want to enter the time in minuts then press 1 otherwise 0 to entre time in seconds:");
+    scanf("%d", &d);
+
+    if (d == 1)
+    {
+      printf("Entre the time in minuts:");
+      scanf("%d", &e);
+      f = e * 60;
+      printf("Entered time is %d in seconds", f);
+    }
+    else if (d == 0)
+    {
+      printf("Entre the time in seconds:");
+      scanf("%d", &g);
+      printf("Entered time is %d seconds", g);
+    }
+    else
+      printf("You have entered invalid alue");
+  }
+  else
+  {
+    printf("You have entered invalid value");
+  }
+
+  return 0;
+}
