@@ -1,0 +1,47 @@
+//Devision of grades using marks of five subjects
+//Jayraj Chaudhari
+#include<stdio.h>
+int main()
+{
+    int a,b,c,d,e;
+    printf("Entre your marks in mathematics out of 100:");
+    scanf("%d",&a);
+    printf("Entre your marks in Physics out of 100:");
+    scanf("%d",&b);
+    printf("Entre your marks in Chemistry out of 100:");
+    scanf("%d",&c);
+    printf("Entre your marks in English out of 100:");
+    scanf("%d",&d);
+    printf("Entre your marks in science out of 100:");
+    scanf("%d",&e);
+
+    float f=(float)((a+b+c+d+e)/5);
+
+    if(f>=90)
+    {
+        printf("You got A grade\n");
+    }
+    else if(f>=80)
+    {
+        printf("You got B grade\n");
+    }
+    else if(f>=70)
+    {
+        printf("You got C grade\n");
+    }
+    else if(f>=60)
+    {
+        printf("You got D grade\n");
+    }
+    else if(f>=50)
+    {
+        printf("You got E grade\n");
+    }
+    else if(f<50)
+    {
+        printf("You got F grade\n");
+
+    }
+
+return 0;
+}
